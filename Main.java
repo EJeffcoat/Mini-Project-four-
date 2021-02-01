@@ -1,5 +1,32 @@
+import java.util.Scanner;
+
 class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+  public static void main(String[] args) 
+  {
+Scanner scan = new Scanner(System.in);
+
+System.out.println("What is your name?");
+String name = scan.next();
+System.out.println("What year is it?");
+int currentYear = scan.nextInt();
+System.out.println("What is your birth year?");
+int birthYear = scan.nextInt();
+
+  System.out.println(greeting(name));
+  
+  int age = getAge(birthYear, currentYear);
+  System.out.println("Your age is " + age);
   }
+  static int getAge (int birthYear, int currentYear)
+{
+int age = currentYear - birthYear;
+return age;
+}
+static String greeting(String name)
+{
+  String hello = "Hello. Welcome back," + name;
+  return hello; 
+
+}
+
 }
