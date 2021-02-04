@@ -4,7 +4,7 @@ class Main {
   public static void main(String[] args) 
   {
 Scanner scan = new Scanner(System.in);
-
+// This code is going to take my name, the year, and my birthyear to identify how old I am/ how old I will be this year.
 System.out.println("What is your name?");
 String name = scan.next();
 System.out.println("What year is it?");
@@ -28,5 +28,15 @@ static String greeting(String name)
   return hello; 
 
 }
+
+ static String ready(boolean dressedForWork)
+ {
+   if(dressedForWork)
+   {
+    return "You're good to go";
+   }else{
+      return "You're not ready yet";    
+   }
+ }
 
 }
